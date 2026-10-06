@@ -54,4 +54,12 @@ INNER JOIN autores
     ON libros.autor_id = autores.id;
 
 
+SELECT 
+    autores.nombre AS autor,
+    COUNT(libros.id) AS cantidad_libros
+FROM autores
+LEFT JOIN libros
+    ON autores.id = libros.autor_id
+GROUP BY autores.id, autores.nombre;
+
 
