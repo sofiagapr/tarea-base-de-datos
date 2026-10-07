@@ -42,7 +42,7 @@ SELECT COUNT(*) AS cantidad_libros
 FROM libros;
 
 UPDATE libros
-SET anio = 2003
+SET anio = 2005
 WHERE titulo = 'Rayuela';
 
 
@@ -61,6 +61,14 @@ FROM autores
 LEFT JOIN libros
     ON autores.id = libros.autor_id
 GROUP BY autores.id, autores.nombre;
+
+SELECT nombre, pais
+FROM autores
+ORDER BY nombre;
+
+SELECT titulo, anio
+FROM libros
+ORDER BY anio DESC;
 
 
 SELECT nombre, pais
