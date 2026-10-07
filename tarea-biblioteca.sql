@@ -63,3 +63,10 @@ LEFT JOIN libros
 GROUP BY autores.id, autores.nombre;
 
 
+SELECT titulo, anio
+FROM libros
+ORDER BY anio DESC;
+
+SELECT nombre, pais
+FROM autores
+ORDER BY nombre;
