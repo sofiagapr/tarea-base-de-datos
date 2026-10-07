@@ -68,3 +68,8 @@ FROM autores
 ORDER BY nombre;
 
 
+SELECT titulo, anio
+FROM libros
+ORDER BY anio DESC;
+
+
