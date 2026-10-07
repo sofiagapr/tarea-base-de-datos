@@ -42,7 +42,7 @@ SELECT COUNT(*) AS cantidad_libros
 FROM libros;
 
 UPDATE libros
-SET anio = 2003
+SET anio = 2005
 WHERE titulo = 'Rayuela';
 
 
